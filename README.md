@@ -7,6 +7,7 @@ Each numbered folder computes one group of outputs.
 | Folder | Output | Scripts |
 |---|---|---|
 | `01_Tables_1_2` | Tables 1 and 2 (latent-factor design) | `run_simulation.R`, `make_tables.R` |
+| `02_Table_4` | Table 4 (fine-mapping in the *IL2RA* region) | `run_simulation.R`, `make_tables.R` |
 | `03_Tables_B1_B3` | Tables B1, B2, and B3 (Gaussian Toeplitz covariates) | `run_simulation.R`, `make_tables.R` |
 | `04_Table_B4` | Table B4 (binomial covariates) | `run_simulation.R`, `make_tables.R` |
 | `05_Table_B5` | Table B5 (computing time) | `run_simulation.R`, `make_tables.R` |
@@ -27,6 +28,10 @@ Table B5 times the savvySh package from CRAN. The timings in the paper were
 taken with version 0.1.3, and `05_Table_B5/run_simulation.R` installs savvySh
 from CRAN when it is missing or older than that.
 
+Table 4 also needs Java and the R packages remotes, flashfmZero, and savvySh,
+which `02_Table_4/run_simulation.R` installs on the first run (see
+`02_Table_4/README.md`).
+
 
 ## Running the code
 
@@ -39,7 +44,8 @@ Rscript make_tables.R
 ```
 
 `run_simulation.R` (`run_real_data.R` in `07_Tables_D7_D9`) writes one CSV
-file per setting to `results/`, with one row per replication.
+file per setting to `results/`, with one row per replication, and in
+`02_Table_4` one CSV file per replication.
 `make_tables.R` reads `results/` and writes each table to `tables/` as a
 LaTeX file, together with a CSV file of the numbers it shows.
 `make_figures.R` writes every figure to `figures/` as EPS and PNG, under the
@@ -47,10 +53,13 @@ file names used in the paper.
 
 The `results/` folders hold the results reported in the paper, so
 `make_tables.R` and `make_figures.R` can be run straight away and give the
-tables and figures of the paper. `run_simulation.R` skips every setting that
-is already complete in `results/`. To compute a setting again, delete its CSV
-file (or the whole `results/` folder) first. A run that stops can be started
-again with the same command, and only the missing replications are computed.
+tables and figures of the paper. In `02_Table_4`, whose scripts use the
+fine-mapping packages of Jennifer Asimit and take a population simulated with
+HapGen2 as input, `run_simulation.R` computes the results first (see its
+README). `run_simulation.R` skips every setting that is already complete in
+`results/`. To compute a setting again, delete its CSV file (or the whole
+`results/` folder) first. A run that stops can be started again with the same
+command, and only the missing replications are computed.
 
 The replications run in parallel on at most 10 workers. This limit is
 `max_workers` at the top of `R/simulation_tools.R`. Each worker is a separate
@@ -62,6 +71,7 @@ Approximate computing cost on one core:
 | Folder | Cost |
 |---|---|
 | `01_Tables_1_2` | 5 core-hours |
+| `02_Table_4` | 4 core-hours |
 | `03_Tables_B1_B3` | 250 core-hours, of which about 210 are for n = 2,500 with p/n of 50% or more |
 | `04_Table_B4` | 1 core-hour |
 | `05_Table_B5` | 10 hours on a single core |
@@ -112,6 +122,7 @@ number of workers or on restarts.
 | Output | Generator | Seed of replication k |
 |---|---|---|
 | Tables 1 and 2 | Mersenne-Twister | 123 + k |
+| Table 4 | L'Ecuyer-CMRG | 123 + k for the data, 100000 + k before the fine-mapping with each estimator |
 | Tables B1-B4 and B6 | L'Ecuyer-CMRG | 123 + k |
 | Table B5 | Mersenne-Twister | 123 + k for the data, 100123 + k for the folds |
 | Tables D7-D9 | Mersenne-Twister | 123 + k for the 70/30 split, 10000 + k for the folds |
