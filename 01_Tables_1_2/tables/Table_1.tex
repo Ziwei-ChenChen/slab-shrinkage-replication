@@ -1,0 +1,76 @@
+\begin{table}[ht!]
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{0.8}
+\Large
+\caption{\textbf{Counts of models achieving the minimum $L_2$ error}}
+\label{counts_mean_l2_error_SRR}
+\footnotesize{
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccccccc@{}}
+\toprule
+\multicolumn{11}{c}{\textbf{Normal Distribution: $\bm\sigma=\textbf{1}$}}\\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{5\%}} & \multicolumn{3}{c}{\textbf{10\%}} & \multicolumn{3}{c}{\textbf{25\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & 0 & 0 & 1 & 29 & 44 & 78 & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} \\
+\textbf{RR} &  & 62 & 55 & 27 & 43 & 50 & 7 & 0 & 0 & 0 \\
+\textbf{EN} &  & 5 & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{LASSO} &  & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{SRR} &  & \textcolor{red}{183} & \textcolor{red}{190} & \textcolor{red}{220} & \textcolor{red}{178} & \textcolor{red}{156} & \textcolor{red}{165} & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{50\%}} & \multicolumn{3}{c}{\textbf{75\%}} & \multicolumn{3}{c}{\textbf{95\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} \\
+\textbf{RR} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{EN} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{LASSO} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{SRR} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\midrule
+\multicolumn{11}{c}{\textbf{Normal Distribution: $\bm\sigma=\textbf{5}$}}\\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{5\%}} & \multicolumn{3}{c}{\textbf{10\%}} & \multicolumn{3}{c}{\textbf{25\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{RR} &  & 62 & 55 & 27 & 52 & 58 & 10 & 29 & 22 & 1 \\
+\textbf{EN} &  & 5 & 3 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{LASSO} &  & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{SRR} &  & \textcolor{red}{183} & \textcolor{red}{190} & \textcolor{red}{220} & \textcolor{red}{198} & \textcolor{red}{192} & \textcolor{red}{240} & \textcolor{red}{221} & \textcolor{red}{228} & \textcolor{red}{249} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{50\%}} & \multicolumn{3}{c}{\textbf{75\%}} & \multicolumn{3}{c}{\textbf{95\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{RR} &  & 15 & 2 & 0 & 5 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{EN} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{LASSO} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{SRR} &  & \textcolor{red}{235} & \textcolor{red}{248} & \textcolor{red}{250} & \textcolor{red}{245} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} & \textcolor{red}{250} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\bottomrule
+\end{tabular*}%
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \emph{Note:} We tabulate counts of how many times each estimator (OLS, RR, EN, LASSO, SRR, $\text{POET}_{\bm{99\%}}$, and $\text{POET}_{\bm{f}}$) achieves the lowest $L_2$-distance (from the ``true'' regression parameters) across $N = 250$ replications of samples of size $n = 1,000$ for various choices of $p/n$ and $f/p$ under $\sigma=1, 5$. The best-performing method is highlighted in \textcolor{red}{red}. 
+\end{tablenotes}
+\end{table}

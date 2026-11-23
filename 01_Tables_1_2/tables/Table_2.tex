@@ -1,0 +1,72 @@
+\begin{table}[ht!]
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1}
+\Large
+\caption{\textbf{Mean $L_2$ error ratios of estimators relative to SRR}}
+\label{mean_l2_error_ratios_SRR}
+\footnotesize{
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccccccc@{}}
+\toprule
+\multicolumn{11}{c}{\textbf{Normal Distribution: $\bm\sigma=\textbf{1}$}}\\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{5\%}} & \multicolumn{3}{c}{\textbf{10\%}} & \multicolumn{3}{c}{\textbf{25\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & \textcolor{red}{2.111} & \textcolor{red}{2.080} & \textcolor{red}{2.182} & \textcolor{red}{1.126} & \textcolor{red}{1.125} & \textcolor{red}{1.133} & 0.498 & 0.500 & 0.498 \\
+\textbf{RR} &  & \textcolor{red}{1.020} & \textcolor{red}{1.027} & \textcolor{red}{1.073} & \textcolor{red}{1.011} & \textcolor{red}{1.014} & \textcolor{red}{1.054} & \textcolor{red}{1.006} & \textcolor{red}{1.010} & \textcolor{red}{1.038} \\
+\textbf{EN} &  & \textcolor{red}{1.170} & \textcolor{red}{1.226} & \textcolor{red}{1.382} & \textcolor{red}{1.160} & \textcolor{red}{1.251} & \textcolor{red}{1.395} & \textcolor{red}{1.173} & \textcolor{red}{1.250} & \textcolor{red}{1.382} \\
+\textbf{LASSO} &  & \textcolor{red}{1.238} & \textcolor{red}{1.296} & \textcolor{red}{1.464} & \textcolor{red}{1.220} & \textcolor{red}{1.303} & \textcolor{red}{1.454} & \textcolor{red}{1.210} & \textcolor{red}{1.286} & \textcolor{red}{1.421} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & \textcolor{red}{2.577} & \textcolor{red}{1.582} & \textcolor{red}{1.938} & \textcolor{red}{1.432} & \textcolor{red}{1.669} & \textcolor{red}{2.257} & \textcolor{red}{2.982} & \textcolor{red}{2.347} & \textcolor{red}{2.729} \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & \textcolor{red}{2.577} & \textcolor{red}{2.844} & \textcolor{red}{4.266} & \textcolor{red}{1.406} & \textcolor{red}{1.623} & \textcolor{red}{2.579} & 0.780 & 0.921 & \textcolor{red}{1.723} \\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{50\%}} & \multicolumn{3}{c}{\textbf{75\%}} & \multicolumn{3}{c}{\textbf{95\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & 0.310 & 0.306 & 0.308 & 0.290 & 0.290 & 0.293 & 0.520 & 0.521 & 0.518 \\
+\textbf{RR} &  & \textcolor{red}{1.004} & \textcolor{red}{1.009} & \textcolor{red}{1.044} & \textcolor{red}{1.004} & \textcolor{red}{1.010} & \textcolor{red}{1.063} & \textcolor{red}{1.063} & \textcolor{red}{1.295} & \textcolor{red}{1.848} \\
+\textbf{EN} &  & \textcolor{red}{1.173} & \textcolor{red}{1.254} & \textcolor{red}{1.394} & \textcolor{red}{1.175} & \textcolor{red}{1.256} & \textcolor{red}{1.407} & \textcolor{red}{1.183} & \textcolor{red}{1.262} & \textcolor{red}{1.533} \\
+\textbf{LASSO} &  & \textcolor{red}{1.202} & \textcolor{red}{1.279} & \textcolor{red}{1.421} & \textcolor{red}{1.198} & \textcolor{red}{1.276} & \textcolor{red}{1.429} & \textcolor{red}{1.204} & \textcolor{red}{1.280} & \textcolor{red}{1.550} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & \textcolor{red}{2.288} & \textcolor{red}{3.146} & \textcolor{red}{2.983} & \textcolor{red}{2.837} & \textcolor{red}{3.355} & \textcolor{red}{3.022} & \textcolor{red}{3.578} & \textcolor{red}{3.441} & \textcolor{red}{3.083} \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & 0.777 & 0.858 & \textcolor{red}{1.679} & 0.896 & 0.937 & \textcolor{red}{1.916} & 0.987 & \textcolor{red}{1.040} & \textcolor{red}{2.317} \\
+\midrule
+\multicolumn{11}{c}{\textbf{Normal Distribution: $\bm\sigma=\textbf{5}$}}\\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{5\%}} & \multicolumn{3}{c}{\textbf{10\%}} & \multicolumn{3}{c}{\textbf{25\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & \textcolor{red}{10.553} & \textcolor{red}{10.401} & \textcolor{red}{10.906} & \textcolor{red}{5.630} & \textcolor{red}{5.626} & \textcolor{red}{5.664} & \textcolor{red}{2.487} & \textcolor{red}{2.498} & \textcolor{red}{2.489} \\
+\textbf{RR} &  & \textcolor{red}{1.021} & \textcolor{red}{1.027} & \textcolor{red}{1.072} & \textcolor{red}{1.011} & \textcolor{red}{1.014} & \textcolor{red}{1.054} & \textcolor{red}{1.006} & \textcolor{red}{1.010} & \textcolor{red}{1.038} \\
+\textbf{EN} &  & \textcolor{red}{1.171} & \textcolor{red}{1.226} & \textcolor{red}{1.381} & \textcolor{red}{1.159} & \textcolor{red}{1.250} & \textcolor{red}{1.395} & \textcolor{red}{1.173} & \textcolor{red}{1.250} & \textcolor{red}{1.382} \\
+\textbf{LASSO} &  & \textcolor{red}{1.239} & \textcolor{red}{1.296} & \textcolor{red}{1.463} & \textcolor{red}{1.220} & \textcolor{red}{1.303} & \textcolor{red}{1.454} & \textcolor{red}{1.210} & \textcolor{red}{1.286} & \textcolor{red}{1.421} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & \textcolor{red}{12.794} & \textcolor{red}{1.582} & \textcolor{red}{1.937} & \textcolor{red}{5.515} & \textcolor{red}{1.669} & \textcolor{red}{2.256} & \textcolor{red}{2.982} & \textcolor{red}{2.346} & \textcolor{red}{2.729} \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & \textcolor{red}{12.794} & \textcolor{red}{14.027} & \textcolor{red}{20.858} & \textcolor{red}{6.779} & \textcolor{red}{7.809} & \textcolor{red}{11.695} & \textcolor{red}{2.856} & \textcolor{red}{3.530} & \textcolor{red}{5.670} \\
+\midrule
+\multirow{2}{*}{\textbf{Model}} & $\bm{p/n}$ & \multicolumn{3}{c}{\textbf{50\%}} & \multicolumn{3}{c}{\textbf{75\%}} & \multicolumn{3}{c}{\textbf{95\%}} \\
+\cmidrule{3-5}
+\cmidrule{6-8}
+\cmidrule{9-11}
+\multirow{2}{*}{} & $\bm{f/p}$ & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} & \textbf{25\%} & \textbf{50\%} & \textbf{75\%} \\
+\midrule
+\textbf{OLS} &  & \textcolor{red}{1.549} & \textcolor{red}{1.529} & \textcolor{red}{1.542} & \textcolor{red}{1.449} & \textcolor{red}{1.452} & \textcolor{red}{1.465} & \textcolor{red}{2.602} & \textcolor{red}{2.607} & \textcolor{red}{2.590} \\
+\textbf{RR} &  & \textcolor{red}{1.004} & \textcolor{red}{1.009} & \textcolor{red}{1.044} & \textcolor{red}{1.004} & \textcolor{red}{1.010} & \textcolor{red}{1.063} & \textcolor{red}{1.063} & \textcolor{red}{1.295} & \textcolor{red}{1.848} \\
+\textbf{EN} &  & \textcolor{red}{1.173} & \textcolor{red}{1.254} & \textcolor{red}{1.394} & \textcolor{red}{1.175} & \textcolor{red}{1.256} & \textcolor{red}{1.407} & \textcolor{red}{1.183} & \textcolor{red}{1.262} & \textcolor{red}{1.533} \\
+\textbf{LASSO} &  & \textcolor{red}{1.202} & \textcolor{red}{1.279} & \textcolor{red}{1.421} & \textcolor{red}{1.198} & \textcolor{red}{1.276} & \textcolor{red}{1.429} & \textcolor{red}{1.204} & \textcolor{red}{1.280} & \textcolor{red}{1.550} \\
+\textbf{$\text{POET}_{\bm{99\%}}$} &  & \textcolor{red}{2.288} & \textcolor{red}{3.146} & \textcolor{red}{2.983} & \textcolor{red}{2.837} & \textcolor{red}{3.355} & \textcolor{red}{3.022} & \textcolor{red}{3.578} & \textcolor{red}{3.441} & \textcolor{red}{3.083} \\
+\textbf{$\text{POET}_{\bm{f}}$} &  & \textcolor{red}{1.609} & \textcolor{red}{2.073} & \textcolor{red}{3.730} & \textcolor{red}{1.309} & \textcolor{red}{1.643} & \textcolor{red}{3.374} & \textcolor{red}{1.247} & \textcolor{red}{1.522} & \textcolor{red}{3.574} \\
+\bottomrule
+\end{tabular*}%
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \emph{Note:} We report the mean $L_2$ error ratios of each estimator (OLS, RR, EN, LASSO, $\text{POET}_{\bm{99\%}}$, and $\text{POET}_{\bm{f}}$) relative to SRR across $N = 250$ simulations with sample size $n = 1,000$, and $\sigma =\{1,5\}$. A ratio greater/lower than $1$ indicates ``worse''/``better'' performance than SRR. Instances highlighted in \textcolor{red}{red} indicate cases where SRR outperforms the comparator (i.e., those with ratio larger than $1$).
+\end{tablenotes}
+\end{table}
