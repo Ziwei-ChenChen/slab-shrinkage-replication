@@ -1,0 +1,26 @@
+\begin{table}[htbp!]
+\centering
+\caption{\textbf{Estimated MSE for Poisson GLM with raw and standardized input data}}
+\label{tab:results_Poisson_log_regression_raw_data}
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1}
+\footnotesize{
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Raw Data}} & \multicolumn{2}{c}{\textbf{Standardized Data}}\\
+ \cmidrule{2-3} \cmidrule{4-5}
+\multirow{-2}{*}{\textbf{Model}} & $M=1$ & $M=10$ & $M=1$ & $M=10$ \\
+\midrule
+\textbf{OLS} & 0.9253 & 0.8924 & 0.9253 & 0.8924 \\
+\textbf{RR} & 0.9403 & 0.9183 & 0.9403 & 0.9183 \\
+\textbf{EN} & 0.9291 & 0.8930 & 0.9291 & 0.8930 \\
+\textbf{LASSO} & 0.9303 & 0.8924 & 0.9303 & 0.8924 \\
+\textbf{St} & \textcolor{red}{0.9210} & \textcolor{red}{0.8367} & \textcolor{red}{0.8980} & \textcolor{red}{0.8276} \\
+\textbf{DSh} & 1.1231 & 1.4101 & 0.9736 & 1.6354 \\
+\textbf{Sh} & 0.9253 & 0.8924 & 0.9253 & 0.8924 \\
+\textbf{SR} & 0.9254 & 0.8924 & 0.9251 & 0.8923 \\
+\textbf{GSR} & 0.9240 & 0.8894 & 0.9250 & 0.8903 \\
+\bottomrule
+\end{tabular*}
+}
+\end{table}

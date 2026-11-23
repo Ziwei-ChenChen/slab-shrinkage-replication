@@ -1,0 +1,98 @@
+\begin{sidewaystable}
+\setlength{\tabcolsep}{1pt} % Adjust column spacing
+\renewcommand{\arraystretch}{0.7} % Adjust row spacing
+\caption{\textbf{Best performance regression model}}
+\label{tab:simulated_normal_sigma1}
+\Huge
+\footnotesize{
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cc|ccccccc|ccccccc|ccccccc@{}}
+\hline
+& $\bm\rho$ & \textbf{-0.75} & \textbf{-0.5} & \textbf{-0.25} & \textbf{0} & \textbf{0.25} & \textbf{0.5} & \textbf{0.75} & \textbf{-0.75} & \textbf{-0.5} & \textbf{-0.25} & \textbf{0} & \textbf{0.25} & \textbf{0.5} & \textbf{0.75} & \textbf{-0.75} & \textbf{-0.5} & \textbf{-0.25} & \textbf{0} & \textbf{0.25} & \textbf{0.5} & \textbf{0.75} \\
+\hline
+\multicolumn{23}{c}{\textbf{Normal Distribution}: $\bm\sigma=\textbf{1}$}\\
+\hline
+\multicolumn{23}{l}{\textbf{Panel A: $\bm n=\textbf{500}$}}\\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{5\%}} & \multicolumn{7}{c|}{\textbf{10\%}} & \multicolumn{7}{c}{\textbf{25\%}} \\
+\hline
+OLS &  & 5 & 8 & 5 & 3 & 8 & 15 & 28 & 34 & 22 & 31 & 30 & 28 & 27 & 28 & 7 & 6 & 13 & 6 & 16 & 17 & 20 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 4 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 2 & 11 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 11 & 6 & 10 & 12 & 15 & 15 & 21 & 31 & 32 & 25 & 25 & 36 & 38 & 42 & 17 & 7 & 8 & 9 & 13 & 14 & 23 \\
+DSh &  & 6 & 12 & 14 & 14 & 22 & 35 & 36 & 40 & 46 & 60 & 79 & 72 & 78 & 64 & 13 & 12 & 12 & 21 & 22 & 34 & 45 \\
+Sh &  & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+SR &  & \textcolor{red}{146} & \textcolor{red}{160} & \textcolor{red}{157} & \textcolor{red}{183} & \textcolor{red}{148} & \textcolor{red}{116} & \textcolor{red}{78} & 56 & 62 & 44 & 24 & 20 & 24 & 31 & \textcolor{red}{152} & \textcolor{red}{167} & \textcolor{red}{176} & \textcolor{red}{171} & \textcolor{red}{143} & \textcolor{red}{119} & \textcolor{red}{99} \\
+GSR &  & 82 & 64 & 64 & 38 & 56 & 63 & 69 & \textcolor{red}{88} & \textcolor{red}{88} & \textcolor{red}{89} & \textcolor{red}{92} & \textcolor{red}{94} & \textcolor{red}{83} & \textcolor{red}{85} & 61 & 57 & 41 & 43 & 56 & 66 & 63 \\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{50\%}} & \multicolumn{7}{c|}{\textbf{75\%}} & \multicolumn{7}{c}{\textbf{95\%}} \\
+\hline
+OLS &  & 30 & 31 & 15 & 13 & 28 & 26 & 17 & 21 & 21 & 7 & 11 & 16 & 14 & 19 & 18 & 12 & 14 & 18 & 18 & 14 & 14 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 24 & 20 & 27 & 20 & 22 & 27 & 33 & 11 & 7 & 15 & 9 & 12 & 9 & 14 & 19 & 20 & 10 & 8 & 12 & 8 & 12 \\
+DSh &  & 33 & 54 & 68 & 74 & 82 & 68 & 73 & 8 & 18 & 21 & 21 & 19 & 26 & 20 & 1 & 6 & 14 & 14 & 14 & 15 & 16 \\
+Sh &  & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 2 & 0 & 0 \\
+SR &  & 75 & 53 & 46 & 37 & 30 & 28 & 20 & \textcolor{red}{139} & \textcolor{red}{153} & \textcolor{red}{164} & \textcolor{red}{161} & \textcolor{red}{157} & \textcolor{red}{146} & \textcolor{red}{139} & \textcolor{red}{139} & \textcolor{red}{148} & \textcolor{red}{152} & \textcolor{red}{158} & \textcolor{red}{143} & \textcolor{red}{166} & \textcolor{red}{149} \\
+GSR &  & \textcolor{red}{87} & \textcolor{red}{92} & \textcolor{red}{94} & \textcolor{red}{106} & \textcolor{red}{88} & \textcolor{red}{101} & \textcolor{red}{106} & 69 & 50 & 43 & 48 & 46 & 55 & 58 & 70 & 64 & 60 & 52 & 61 & 47 & 59 \\
+\hline
+\multicolumn{23}{l}{\textbf{Panel B: $\bm{n}=\textbf{1,000}$}} \\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{5\%}} & \multicolumn{7}{c|}{\textbf{10\%}} & \multicolumn{7}{c}{\textbf{25\%}} \\
+\hline
+OLS &  & 37 & 28 & 16 & 25 & 23 & 29 & 24 & 38 & 31 & 23 & 18 & 21 & 31 & 22 & 31 & 18 & 23 & 23 & 18 & 14 & 19 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 25 & 22 & 28 & 34 & 44 & 34 & 32 & 23 & 23 & 25 & 24 & 34 & 32 & 38 & 29 & 26 & 23 & 31 & 30 & 45 & 34 \\
+DSh &  & 33 & 56 & 47 & 75 & 54 & 67 & 70 & 41 & 55 & 65 & 78 & 71 & 71 & 71 & 37 & 55 & 59 & 70 & 70 & 71 & 75 \\
+Sh &  & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+SR &  & \textcolor{red}{79} & 56 & 45 & 34 & 32 & 17 & 14 & \textcolor{red}{75} & 41 & 48 & 29 & 25 & 21 & 26 & 63 & 48 & 30 & 35 & 20 & 24 & 24 \\
+GSR &  & 76 & \textcolor{red}{87} & \textcolor{red}{114} & \textcolor{red}{82} & \textcolor{red}{97} & \textcolor{red}{103} & \textcolor{red}{110} & 71 & \textcolor{red}{100} & \textcolor{red}{89} & \textcolor{red}{101} & \textcolor{red}{99} & \textcolor{red}{95} & \textcolor{red}{93} & \textcolor{red}{89} & \textcolor{red}{103} & \textcolor{red}{115} & \textcolor{red}{91} & \textcolor{red}{112} & \textcolor{red}{96} & \textcolor{red}{98} \\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{50\%}} & \multicolumn{7}{c|}{\textbf{75\%}} & \multicolumn{7}{c}{\textbf{95\%}} \\
+\hline
+OLS &  & 29 & 14 & 15 & 28 & 22 & 24 & 24 & 24 & 18 & 16 & 18 & 25 & 17 & 16 & 21 & 28 & 22 & 23 & 23 & 17 & 30 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 35 & 28 & 29 & 20 & 26 & 29 & 38 & 28 & 25 & 20 & 30 & 27 & 27 & 33 & 35 & 33 & 18 & 20 & 21 & 18 & 21 \\
+DSh &  & 30 & 56 & 58 & 69 & 70 & 75 & 66 & 22 & 51 & 49 & 61 & 70 & 66 & 68 & 10 & 22 & 38 & 53 & 46 & 56 & 49 \\
+Sh &  & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 \\
+SR &  & 63 & 41 & 45 & 29 & 37 & 31 & 21 & 74 & 64 & 44 & 55 & 29 & 35 & 35 & 76 & 62 & 68 & 51 & 56 & 51 & 45 \\
+GSR &  & \textcolor{red}{92} & \textcolor{red}{111} & \textcolor{red}{103} & \textcolor{red}{103} & \textcolor{red}{95} & \textcolor{red}{91} & \textcolor{red}{101} & \textcolor{red}{101} & \textcolor{red}{92} & \textcolor{red}{121} & \textcolor{red}{86} & \textcolor{red}{99} & \textcolor{red}{105} & \textcolor{red}{98} & \textcolor{red}{105} & \textcolor{red}{105} & \textcolor{red}{104} & \textcolor{red}{103} & \textcolor{red}{104} & \textcolor{red}{108} & \textcolor{red}{105} \\
+\hline
+\multicolumn{23}{l}{\textbf{Panel C: $\bm{n}=\textbf{2,500}$}} \\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{5\%}} & \multicolumn{7}{c|}{\textbf{10\%}} & \multicolumn{7}{c}{\textbf{25\%}} \\
+\hline
+OLS &  & 7 & 5 & 2 & 3 & 9 & 13 & 17 & 25 & 26 & 11 & 17 & 15 & 20 & 28 & 8 & 5 & 10 & 6 & 6 & 11 & 23 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 7 & 5 & 6 & 4 & 7 & 12 & 28 & 23 & 24 & 26 & 22 & 32 & 40 & 31 & 10 & 6 & 9 & 9 & 8 & 9 & 11 \\
+DSh &  & 9 & 13 & 14 & 20 & 26 & 29 & 43 & 51 & 64 & 64 & 82 & 74 & 74 & 73 & 7 & 12 & 19 & 22 & 26 & 34 & 49 \\
+Sh &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+SR &  & \textcolor{red}{164} & \textcolor{red}{176} & \textcolor{red}{178} & \textcolor{red}{183} & \textcolor{red}{149} & \textcolor{red}{116} & \textcolor{red}{82} & 69 & 47 & 40 & 28 & 26 & 23 & 19 & \textcolor{red}{145} & \textcolor{red}{152} & \textcolor{red}{164} & \textcolor{red}{180} & \textcolor{red}{158} & \textcolor{red}{142} & \textcolor{red}{116} \\
+GSR &  & 63 & 51 & 50 & 40 & 59 & 80 & 80 & \textcolor{red}{81} & \textcolor{red}{89} & \textcolor{red}{109} & \textcolor{red}{101} & \textcolor{red}{103} & \textcolor{red}{93} & \textcolor{red}{99} & 80 & 75 & 48 & 33 & 52 & 54 & 51 \\
+\hline
+\multirow{2}{*}{} & $\bm{p/n}$ & \multicolumn{7}{c|}{\textbf{50\%}} & \multicolumn{7}{c|}{\textbf{75\%}} & \multicolumn{7}{c}{\textbf{95\%}} \\
+\hline
+OLS &  & 22 & 11 & 15 & 12 & 14 & 17 & 25 & 9 & 11 & 15 & 11 & 18 & 12 & 13 & 17 & 13 & 12 & 15 & 9 & 20 & 18 \\
+RR &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+EN &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+LASSO &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+St &  & 22 & 20 & 18 & 26 & 36 & 38 & 36 & 13 & 5 & 13 & 11 & 9 & 16 & 8 & 17 & 12 & 8 & 12 & 14 & 8 & 12 \\
+DSh &  & 49 & 56 & 77 & 77 & 69 & 72 & 65 & 14 & 16 & 18 & 24 & 23 & 23 & 26 & 12 & 11 & 14 & 20 & 27 & 19 & 21 \\
+Sh &  & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+SR &  & 65 & 36 & 36 & 43 & 25 & 19 & 26 & \textcolor{red}{159} & \textcolor{red}{167} & \textcolor{red}{169} & \textcolor{red}{163} & \textcolor{red}{151} & \textcolor{red}{147} & \textcolor{red}{146} & \textcolor{red}{136} & \textcolor{red}{148} & \textcolor{red}{169} & \textcolor{red}{160} & \textcolor{red}{160} & \textcolor{red}{150} & \textcolor{red}{146} \\
+GSR &  & \textcolor{red}{92} & \textcolor{red}{126} & \textcolor{red}{104} & \textcolor{red}{92} & \textcolor{red}{106} & \textcolor{red}{104} & \textcolor{red}{98} & 55 & 51 & 35 & 41 & 48 & 52 & 57 & 68 & 66 & 47 & 43 & 40 & 53 & 53 \\
+\hline
+\end{tabular*}%
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \emph{Notes:} Performance comparisons across different estimators are shown for Gaussian dependent variable with $\sigma=1$ and Gaussian covariates as in \eqref{dgp_y_1} and \eqref{dgp_x_1}, respectively. Estimators are ranked in $L_2$ distance (from the ``true'' regression parameters) across $N = 250$ replications, and the ``best'' estimator is highlighted in \textcolor{red}{red} for various choices of $n$, $p/n$, and $\rho$.
+\end{tablenotes}
+\end{sidewaystable}

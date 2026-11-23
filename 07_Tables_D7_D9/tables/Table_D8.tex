@@ -1,0 +1,25 @@
+\begin{table}[ht!]
+\setlength{\tabcolsep}{0pt} % Adjust column spacing
+\renewcommand{\arraystretch}{1}
+\caption{\textbf{Estimated MSE for binary classifications with standardized input data}}
+\label{tab:results_Binomial_log_regression_standardized_data}
+\footnotesize{
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{FMS ($0$ vs. $1$)}} & \multicolumn{2}{c}{\textbf{FMS ($0$ vs. $2$)}} & \multicolumn{2}{c}{\textbf{FMS ($0$ vs. $3$)}} & \multicolumn{2}{c}{\textbf{FMS ($0$ vs. $6$)}}\\
+ \cmidrule(r){2-3} \cmidrule(r){4-5} \cmidrule(r){6-7} \cmidrule(r){8-9}
+\multirow{-2}{*}{\textbf{Model}} & $M=1$ & $M=10$ & $M=1$ & $M=10$ & $M=1$ & $M=10$ & $M=1$ & $M=10$\\
+\midrule
+\textbf{OLS} & \textcolor{red}{0.1266} & \textcolor{red}{0.1219} & \textcolor{red}{0.1421} & 0.1330 & 0.1319 & 0.1327 & \textcolor{red}{0.0842} & \textcolor{red}{0.0777} \\
+\textbf{RR} & 0.1299 & 0.1263 & 0.1489 & 0.1383 & 0.1340 & 0.1292 & 0.0883 & 0.0857 \\
+\textbf{EN} & 0.1275 & 0.1240 & 0.1425 & 0.1333 & 0.1320 & \textcolor{red}{0.1289} & 0.0856 & 0.0810 \\
+\textbf{LASSO} & 0.1279 & 0.1249 & 0.1429 & 0.1333 & 0.1320 & 0.1290 & 0.0857 & 0.0811 \\
+\textbf{St} & 0.1276 & 0.1226 & 0.1460 & 0.1424 & 0.1328 & 0.1329 & 0.0876 & 0.0835 \\
+\textbf{DSh} & 0.1336 & 0.3315 & 0.1523 & 0.3673 & 0.1450 & 0.3237 & 0.0934 & 0.3751 \\
+\textbf{Sh} & \textcolor{red}{0.1266} & \textcolor{red}{0.1219} & \textcolor{red}{0.1421} & 0.1330 & 0.1319 & 0.1327 & \textcolor{red}{0.0842} & \textcolor{red}{0.0777} \\
+\textbf{SR} & \textcolor{red}{0.1266} & \textcolor{red}{0.1219} & \textcolor{red}{0.1421} & 0.1331 & \textcolor{red}{0.1318} & 0.1328 & \textcolor{red}{0.0842} & \textcolor{red}{0.0777} \\
+\textbf{GSR} & 0.1267 & 0.1221 & 0.1425 & \textcolor{red}{0.1318} & 0.1320 & 0.1311 & 0.0846 & 0.0780 \\
+\bottomrule
+\end{tabular*}
+}
+\end{table}

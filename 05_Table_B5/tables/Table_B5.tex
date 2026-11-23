@@ -1,0 +1,68 @@
+\begin{sidewaystable}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{1.3pt}
+\caption{\textbf{Computational time relative to OLS for regression models with $n=500$}}
+\label{tab:average_CT}
+\scriptsize{
+\begin{tabular}{c|ccccccc|ccccccc|ccccccc}
+\hline
+\multicolumn{1}{c|}{\textbf{$\rho$}} & \multicolumn{1}{c}{\textbf{-0.75}} & \multicolumn{1}{c}{\textbf{-0.5}} & \multicolumn{1}{c}{\textbf{-0.25}} & \multicolumn{1}{c}{\textbf{0}} & \multicolumn{1}{c}{\textbf{0.25}} & \multicolumn{1}{c}{\textbf{0.5}} & \multicolumn{1}{c|}{\textbf{0.75}} & \multicolumn{1}{c}{\textbf{-0.75}} & \multicolumn{1}{c}{\textbf{-0.5}} & \multicolumn{1}{c}{\textbf{-0.25}} & \multicolumn{1}{c}{\textbf{0}} & \multicolumn{1}{c}{\textbf{0.25}} & \multicolumn{1}{c}{\textbf{0.5}} & \multicolumn{1}{c|}{\textbf{0.75}} & \multicolumn{1}{c}{\textbf{-0.75}} & \multicolumn{1}{c}{\textbf{-0.5}} & \multicolumn{1}{c}{\textbf{-0.25}} & \multicolumn{1}{c}{\textbf{0}} & \multicolumn{1}{c}{\textbf{0.25}} & \multicolumn{1}{c}{\textbf{0.5}} & \multicolumn{1}{c}{\textbf{0.75}} \\
+\hline
+
+\multicolumn{22}{l}{\textbf{Panel A: Normal Distribution with $\sigma=1$}} \\
+\hline
+\multicolumn{1}{c|}{\textbf{$p/n$}} & \multicolumn{7}{c|}{\textbf{5\%}} & \multicolumn{7}{c|}{\textbf{10\%}} & \multicolumn{7}{c}{\textbf{25\%}} \\
+\hline
+%OLS & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+RR & 156.2 & 163.8 & 165.6 & 159.2 & 166.7 & 160.0 & 158.9 & 103.2 & 106.0 & 108.7 & 110.5 & 111.5 & 113.3 & 113.7 & 67.6 & 69.6 & 70.7 & 72.2 & 74.5 & 79.3 & 87.0 \\
+EN & 127.1 & 131.8 & 132.6 & 129.5 & 142.8 & 141.3 & 150.8 & 84.1 & 83.0 & 83.5 & 83.9 & 85.8 & 90.6 & 107.1 & 52.1 & 48.8 & 48.2 & 48.5 & 51.5 & 58.8 & 85.1 \\
+LASSO & 127.8 & 131.2 & 131.7 & 128.2 & 141.2 & 139.5 & 147.7 & 85.5 & 82.7 & 83.0 & 83.2 & 84.8 & 89.3 & 104.8 & 53.3 & 48.9 & 48.0 & 48.1 & 51.0 & 58.2 & 84.2 \\
+$\text{POET}_{99\%}$ & 6.46 & 4.29 & 4.65 & 4.51 & 4.38 & 4.05 & 6.43 & 6.48 & 6.46 & 3.28 & 4.05 & 3.27 & 6.53 & 6.50 & 5.85 & 6.03 & 6.31 & 6.44 & 6.32 & 6.16 & 5.92 \\
+St/DSh/Sh & \textcolor{red}{2.92} & \textcolor{red}{2.98} & \textcolor{red}{3.00} & \textcolor{red}{3.00} & \textcolor{red}{3.03} & \textcolor{red}{2.99} & \underline{2.94} & \textcolor{red}{2.36} & \textcolor{red}{2.37} & \textcolor{red}{2.39} & \textcolor{red}{2.38} & \textcolor{red}{2.39} & \textcolor{red}{2.37} & \underline{2.35} & \textcolor{red}{1.78} & \textcolor{red}{1.79} & \textcolor{red}{1.78} & \textcolor{red}{1.77} & \textcolor{red}{1.77} & \textcolor{red}{1.79} & \textcolor{red}{1.78} \\
+SR/GSR & 3.10 & 3.20 & 3.21 & \underline{3.18} & \underline{3.23} & \underline{3.14} & 3.09 & 2.80 & 2.87 & 2.92 & 2.91 & 2.90 & 2.86 & 2.80 & 2.64 & 2.66 & 2.81 & 2.80 & 2.81 & 2.67 & 2.65 \\
+SRR & \underline{3.10} & \underline{3.17} & \underline{3.15} & 3.31 & 3.38 & 3.28 & \textcolor{red}{2.93} & \underline{2.56} & \underline{2.60} & \underline{2.53} & \underline{2.69} & \underline{2.66} & \underline{2.63} & \textcolor{red}{2.35} & \underline{1.97} & \underline{1.98} & \underline{2.12} & \underline{2.13} & \underline{2.14} & \underline{2.01} & \underline{1.86} \\
+\hline
+\multicolumn{1}{c|}{\textbf{$p/n$}} & \multicolumn{7}{c|}{\textbf{50\%}} & \multicolumn{7}{c|}{\textbf{75\%}} & \multicolumn{7}{c}{\textbf{95\%}} \\
+\hline
+%OLS & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+RR & 54.4 & 58.4 & 61.1 & 63.6 & 68.0 & 74.8 & 84.0 & 50.7 & 54.8 & 56.5 & 62.9 & 65.3 & 71.2 & 78.7 & 49.1 & 50.6 & 50.9 & 50.0 & 51.1 & 51.1 & 51.1 \\
+EN & 42.0 & 42.0 & 43.2 & 45.3 & 50.6 & 61.2 & 96.0 & 37.1 & 39.5 & 42.3 & 49.0 & 57.7 & 74.6 & 119.3 & 38.9 & 41.6 & 44.6 & 48.6 & 54.9 & 64.0 & 85.3 \\
+LASSO & 43.0 & 42.2 & 43.1 & 44.6 & 50.3 & 61.1 & 96.0 & 37.8 & 39.8 & 42.5 & 49.2 & 58.2 & 75.2 & 121.1 & 39.0 & 41.5 & 44.7 & 49.2 & 55.6 & 65.5 & 88.7 \\
+$\text{POET}_{99\%}$ & 6.78 & 7.33 & 7.35 & 8.19 & 8.05 & 7.29 & 7.19 & 9.18 & 7.57 & 7.66 & 7.93 & 7.77 & 8.25 & 7.39 & 7.68 & 7.84 & 8.02 & 7.47 & 8.14 & 7.80 & 7.55 \\
+St/DSh/Sh & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.58} & \textcolor{red}{1.52} & \textcolor{red}{1.52} & \textcolor{red}{1.47} & \textcolor{red}{1.52} & \textcolor{red}{1.52} & \textcolor{red}{1.52} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.49} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.50} \\
+SR/GSR & 2.68 & 2.69 & 2.68 & 2.67 & 2.69 & 2.68 & 2.66 & 2.78 & 2.77 & 2.69 & 2.76 & 2.77 & 2.79 & 2.75 & 2.96 & 2.97 & 2.97 & 2.91 & 2.96 & 2.95 & 2.92 \\
+SRR & \underline{1.77} & \underline{1.78} & \underline{1.78} & \underline{1.78} & \underline{1.79} & \underline{1.78} & \underline{1.71} & \underline{1.79} & \underline{1.78} & \underline{1.73} & \underline{1.78} & \underline{1.79} & \underline{1.80} & \underline{1.73} & \underline{1.92} & \underline{1.93} & \underline{1.92} & \underline{1.88} & \underline{1.92} & \underline{1.91} & \underline{1.87} \\
+\hline
+
+\multicolumn{22}{l}{\textbf{Panel B: Normal Distribution with $\sigma=5$}} \\
+\hline
+\multicolumn{1}{c|}{\textbf{$p/n$}} & \multicolumn{7}{c|}{\textbf{5\%}} & \multicolumn{7}{c|}{\textbf{10\%}} & \multicolumn{7}{c}{\textbf{25\%}} \\
+\hline
+%OLS & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+RR & 165.6 & 165.9 & 165.3 & 155.1 & 158.5 & 162.6 & 167.4 & 107.2 & 108.4 & 107.6 & 107.2 & 111.9 & 110.3 & 116.0 & 67.9 & 69.4 & 71.2 & 72.8 & 73.5 & 77.7 & 87.6 \\
+EN & 139.2 & 141.1 & 140.8 & 132.5 & 136.8 & 143.7 & 158.6 & 87.4 & 85.6 & 89.1 & 88.6 & 93.7 & 95.6 & 115.7 & 52.2 & 48.8 & 48.9 & 49.2 & 51.8 & 59.3 & 90.0 \\
+LASSO & 140.2 & 140.5 & 139.8 & 131.3 & 135.3 & 141.6 & 155.4 & 88.9 & 85.4 & 88.5 & 88.0 & 92.7 & 94.4 & 113.3 & 53.3 & 49.0 & 48.6 & 48.9 & 51.4 & 58.7 & 89.0 \\
+$\text{POET}_{99\%}$ & 6.59 & 4.27 & 4.69 & 4.47 & 4.26 & 4.08 & 6.63 & 6.62 & 6.38 & 3.24 & 4.01 & 3.26 & 6.40 & 6.62 & 6.04 & 6.04 & 6.38 & 6.49 & 6.31 & 6.02 & 5.85 \\
+St/DSh/Sh & \textcolor{red}{2.99} & \textcolor{red}{3.03} & \textcolor{red}{3.01} & \textcolor{red}{2.97} & \textcolor{red}{2.99} & \textcolor{red}{2.97} & \underline{2.99} & \textcolor{red}{2.36} & \textcolor{red}{2.35} & \textcolor{red}{2.39} & \textcolor{red}{2.37} & \textcolor{red}{2.41} & \textcolor{red}{2.35} & \underline{2.36} & \textcolor{red}{1.78} & \textcolor{red}{1.79} & \textcolor{red}{1.79} & \textcolor{red}{1.79} & \textcolor{red}{1.78} & \textcolor{red}{1.77} & \textcolor{red}{1.77} \\
+SR/GSR & 3.17 & 3.20 & 3.24 & 3.17 & 3.18 & \underline{3.16} & 3.14 & 2.81 & 2.83 & 2.89 & 2.89 & 2.91 & 2.83 & 2.80 & 2.66 & 2.66 & 2.82 & 2.82 & 2.81 & 2.65 & 2.64 \\
+SRR & \underline{3.13} & \underline{3.17} & \underline{3.18} & \underline{3.15} & \underline{3.17} & 3.19 & \textcolor{red}{2.98} & \underline{2.51} & \underline{2.48} & \underline{2.51} & \underline{2.58} & \underline{2.59} & \underline{2.54} & \textcolor{red}{2.36} & \underline{1.94} & \underline{1.93} & \underline{2.11} & \underline{2.12} & \underline{2.11} & \underline{1.95} & \underline{1.86} \\
+\hline
+\multicolumn{1}{c|}{\textbf{$p/n$}} & \multicolumn{7}{c|}{\textbf{50\%}} & \multicolumn{7}{c|}{\textbf{75\%}} & \multicolumn{7}{c}{\textbf{95\%}} \\
+\hline
+%OLS & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+RR & 54.8 & 58.4 & 60.9 & 64.0 & 67.7 & 74.7 & 80.1 & 50.3 & 54.9 & 57.8 & 62.7 & 64.8 & 71.1 & 79.6 & 48.6 & 50.3 & 50.2 & 50.4 & 51.0 & 51.0 & 51.8 \\
+EN & 42.3 & 42.0 & 43.0 & 45.4 & 50.4 & 61.5 & 91.4 & 36.8 & 39.5 & 43.3 & 48.7 & 57.4 & 74.3 & 120.2 & 38.7 & 41.6 & 44.0 & 49.0 & 54.8 & 63.6 & 85.4 \\
+LASSO & 43.3 & 42.1 & 43.0 & 44.9 & 50.5 & 61.3 & 91.4 & 37.5 & 39.9 & 43.6 & 49.0 & 57.5 & 74.8 & 122.3 & 38.8 & 41.6 & 44.2 & 49.6 & 55.5 & 65.1 & 89.0 \\
+$\text{POET}_{99\%}$ & 7.17 & 7.35 & 7.40 & 7.74 & 8.28 & 7.39 & 6.86 & 9.16 & 7.62 & 7.76 & 7.71 & 7.64 & 8.01 & 7.89 & 7.66 & 7.94 & 7.94 & 7.40 & 8.14 & 7.79 & 7.76 \\
+St/DSh/Sh & \textcolor{red}{1.60} & \textcolor{red}{1.60} & \textcolor{red}{1.59} & \textcolor{red}{1.58} & \textcolor{red}{1.59} & \textcolor{red}{1.59} & \textcolor{red}{1.56} & \textcolor{red}{1.52} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.52} & \textcolor{red}{1.50} & \textcolor{red}{1.52} & \textcolor{red}{1.52} & \textcolor{red}{1.51} & \textcolor{red}{1.51} & \textcolor{red}{1.49} & \textcolor{red}{1.50} & \textcolor{red}{1.50} & \textcolor{red}{1.50} & \textcolor{red}{1.50} \\
+SR/GSR & 2.68 & 2.69 & 2.68 & 2.68 & 2.69 & 2.68 & 2.59 & 2.77 & 2.77 & 2.75 & 2.76 & 2.75 & 2.79 & 2.78 & 2.94 & 2.95 & 2.93 & 2.93 & 2.95 & 2.94 & 2.94 \\
+SRR & \underline{1.76} & \underline{1.76} & \underline{1.77} & \underline{1.76} & \underline{1.76} & \underline{1.76} & \underline{1.63} & \underline{1.77} & \underline{1.79} & \underline{1.76} & \underline{1.77} & \underline{1.76} & \underline{1.79} & \underline{1.76} & \underline{1.90} & \underline{1.91} & \underline{1.89} & \underline{1.88} & \underline{1.90} & \underline{1.90} & \underline{1.89} \\
+\hline
+\end{tabular}%
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \emph{Notes:} This table reports computational time relative to OLS across $N=250$ replications with $n=500$. For each setting, the average computational time of each estimator is divided by the average computational time of OLS. A value of $25$, for example, indicates that the estimator requires 25 times the OLS computational time. RR, EN, and LASSO include 10-fold cross-validation. St/DSh/Sh denotes the common multiplicative shrinkage call, which returns all three estimators, and SR/GSR denotes the common slab regression call. The lowest value in each setting is highlighted in \textcolor{red}{red} and the second lowest is \underline{underlined}.
+\end{tablenotes}
+\end{sidewaystable}
